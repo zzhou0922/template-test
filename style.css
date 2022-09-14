@@ -1,0 +1,18 @@
+html {
+    /* Anytime we add padding to any element, what can happen is that padding will stretch the page, 
+    let's say we had a page that was 100% of the view port (screen size) with. And if you added padding
+    to something, it would make that more than 100%, then it would force a horizontal scrollbar. 
+    What this does is to PREVENT that from happening because it prevents padding from adding extra width
+    or extra height to the page. */
+    /* That's something we will use in every project. So we're going to include this in the template. */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0; /* Zero on all four sides of the web page. */
+    /* VH stands for viewport height. The full height of the entire window that we're in. 
+    That means we want it to always streth our background, at least full height of the screen, even if the 
+    content isn't enough to take up the full height of the screen. */
+    min-height: 100vh;
+}
+   
